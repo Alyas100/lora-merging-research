@@ -7,32 +7,32 @@ HEAD_DIR = ''               # CLIP Head Directory
 
 config = {
     'dataset': [
-        {
-            'name': 'stanford_cars',
-            'shuffle_train': True,
-            'crop_ratio': 1.0,
-            'clip_encodings': os.path.join(HEAD_DIR, VIT_ARCH, 'stanford_cars_head.pt'),
-            'val_fraction': 0.2,
-            'batch_size': 32,
-            'num_workers': 16,
-            'shuffled_idxs': os.path.join(os.getcwd(), 'dataset/shuffled_idxs/cars_shuffled_idxs.pt')
-        },
-        {
-            'name': 'dtd',
-            'shuffle_train': True,
-            'crop_ratio': 1.0,
-            'clip_encodings': os.path.join(HEAD_DIR, VIT_ARCH, 'dtd_head.pt'),
-            'batch_size': 32,
-            'num_workers': 16,
-        },
-        {
-            'name': 'eurosat',
-            'shuffle_train': True,
-            'crop_ratio': 1.0,
-            'clip_encodings': os.path.join(HEAD_DIR, VIT_ARCH, 'eurosat_head.pt'),
-            'batch_size': 32,
-            'num_workers': 16,
-        },
+        # {
+        #     'name': 'stanford_cars',
+        #     'shuffle_train': True,
+        #     'crop_ratio': 1.0,
+        #     'clip_encodings': os.path.join(HEAD_DIR, VIT_ARCH, 'stanford_cars_head.pt'),
+        #     'val_fraction': 0.2,
+        #     'batch_size': 32,
+        #     'num_workers': 16,
+        #     'shuffled_idxs': os.path.join(os.getcwd(), 'dataset/shuffled_idxs/cars_shuffled_idxs.pt')
+        # },
+        # {
+        #     'name': 'dtd',
+        #     'shuffle_train': True,
+        #     'crop_ratio': 1.0,
+        #     'clip_encodings': os.path.join(HEAD_DIR, VIT_ARCH, 'dtd_head.pt'),
+        #     'batch_size': 32,
+        #     'num_workers': 16,
+        # },
+        # {
+        #     'name': 'eurosat',
+        #     'shuffle_train': True,
+        #     'crop_ratio': 1.0,
+        #     'clip_encodings': os.path.join(HEAD_DIR, VIT_ARCH, 'eurosat_head.pt'),
+        #     'batch_size': 32,
+        #     'num_workers': 16,
+        # },
         {
             'name': 'gtsrb',
             'shuffle_train': True,
@@ -53,24 +53,24 @@ config = {
             'num_workers': 8,  
             'shuffled_idxs': os.path.join(os.getcwd(), 'dataset/shuffled_idxs/mnist_shuffled_idxs.pt')
         },
-        {
-            'name': 'resisc45',
-            'shuffle_train': True,
-            'crop_ratio': 1.0,
-            'clip_encodings': os.path.join(HEAD_DIR, VIT_ARCH, 'resisc45_head.pt'),
-            'batch_size': 32,
-            'num_workers': 16,
-        },
-        {
-            'name': 'sun397',
-            'shuffle_train': True,
-            'crop_ratio': 1.0,
-            'clip_encodings': os.path.join(HEAD_DIR, VIT_ARCH, 'sun397_head.pt'),
-            'val_fraction': 0.2,
-            'batch_size': 32,
-            'num_workers': 16,
-            'shuffled_idxs': os.path.join(os.getcwd(), 'dataset/shuffled_idxs/sun397_shuffled_idxs.pt')
-        },
+        # {
+        #     'name': 'resisc45',
+        #     'shuffle_train': True,
+        #     'crop_ratio': 1.0,    
+        #     'clip_encodings': os.path.join(HEAD_DIR, VIT_ARCH, 'resisc45_head.pt'),
+        #     'batch_size': 32,
+        #     'num_workers': 16,
+        # },
+        # {
+        #     'name': 'sun397',
+        #     'shuffle_train': True,
+        #     'crop_ratio': 1.0,
+        #     'clip_encodings': os.path.join(HEAD_DIR, VIT_ARCH, 'sun397_head.pt'),
+        #     'val_fraction': 0.2,
+        #     'batch_size': 32,
+        #     'num_workers': 16,
+        #     'shuffled_idxs': os.path.join(os.getcwd(), 'dataset/shuffled_idxs/sun397_shuffled_idxs.pt')
+        # },
         {
             'name': 'svhn',
             'shuffle_train': True,
@@ -98,13 +98,13 @@ config = {
             # f'{MODEL_DIR}/svhn_lora-r16-alpha16-dropout0.1.pt',
 
             #HF models IDs
-            'hoffman-lab/KnOTS-ViT-B-32_lora_R16_stanford_cars',
-            'hoffman-lab/KnOTS-ViT-B-32_lora_R16_dtd',
-            'hoffman-lab/KnOTS-ViT-B-32_lora_R16_eurosat',
+            # 'hoffman-lab/KnOTS-ViT-B-32_lora_R16_stanford_cars',
+            # 'hoffman-lab/KnOTS-ViT-B-32_lora_R16_dtd',
+            # 'hoffman-lab/KnOTS-ViT-B-32_lora_R16_eurosat',
             'hoffman-lab/KnOTS-ViT-B-32_lora_R16_gtsrb',
             'hoffman-lab/KnOTS-ViT-B-32_lora_R16_mnist',
-            'hoffman-lab/KnOTS-ViT-B-32_lora_R16_resisc45',
-            'hoffman-lab/KnOTS-ViT-B-32_lora_R16_sun397',
+            # 'hoffman-lab/KnOTS-ViT-B-32_lora_R16_resisc45',
+            # 'hoffman-lab/KnOTS-ViT-B-32_lora_R16_sun397',
             'hoffman-lab/KnOTS-ViT-B-32_lora_R16_svhn',
         ],
         'ft_config': {
