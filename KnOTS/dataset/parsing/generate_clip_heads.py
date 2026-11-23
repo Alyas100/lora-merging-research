@@ -47,11 +47,11 @@ def build_classification_head(model, tokenizer, classnames, template, device):
 
 if __name__ == '__main__':
     # Uncomment one of these depending on model you want.
-    vit_path = "openai/clip-vit-large-patch14"
-    # vit_path = "openai/clip-vit-base-patch32"
-    cache_dir = ""                              # Path to HF cache directory
-    classification_heads_dir = ""               # dir to save classification heads
-    config_name = '8vision_train'               # 8 Vision dataset config name
+    # vit_path = "openai/clip-vit-large-patch14"
+    vit_path = "openai/clip-vit-base-patch32"
+    cache_dir = "data"                              # Path to HF cache directory
+    classification_heads_dir = "ViT-B-32-CLIP"               # dir to save classification heads
+    config_name = 'vitB_r16_knots_ties'               # 8 Vision dataset config name
     
     model = CLIPModel.from_pretrained(vit_path, cache_dir=cache_dir)
     processor = CLIPProcessor.from_pretrained(vit_path, cache_dir=cache_dir)

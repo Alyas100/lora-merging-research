@@ -411,38 +411,38 @@ def prepare_data(config, device='cuda'):
 
     #-------------------------------------------------
     
-    # elif data_config['type'] == 'eurosat':
-    #     from dataset.eurosat import prepare_train_loaders, prepare_test_loaders
-    #     train_loaders = prepare_train_loaders(data_config)
-    #     test_loaders = prepare_test_loaders(data_config)
-    # elif data_config['type'] == 'stanford_cars':
-    #     from dataset.cars import prepare_train_loaders, prepare_test_loaders
-    #     train_loaders = prepare_train_loaders(data_config)
-    #     test_loaders = prepare_test_loaders(data_config)
-    # elif data_config['type'] == 'dtd':
-    #     from dataset.dtd import prepare_train_loaders, prepare_test_loaders
-    #     train_loaders = prepare_train_loaders(data_config)
-    #     test_loaders = prepare_test_loaders(data_config)
-    # elif data_config['type'] == 'mnist':
-    #     from dataset.mnist import prepare_train_loaders, prepare_test_loaders
-    #     train_loaders = prepare_train_loaders(data_config)
-    #     test_loaders = prepare_test_loaders(data_config)
-    # elif data_config['type'] == 'gtsrb':
-    #     from dataset.gtsrb import prepare_train_loaders, prepare_test_loaders
-    #     train_loaders = prepare_train_loaders(data_config)
-    #     test_loaders = prepare_test_loaders(data_config)
+    elif data_config['type'] == 'eurosat':
+        from dataset.eurosat import prepare_train_loaders, prepare_test_loaders
+        train_loaders = prepare_train_loaders(data_config)
+        test_loaders = prepare_test_loaders(data_config)
+    elif data_config['type'] == 'stanford_cars':
+        from dataset.cars import prepare_train_loaders, prepare_test_loaders
+        train_loaders = prepare_train_loaders(data_config)
+        test_loaders = prepare_test_loaders(data_config)
+    elif data_config['type'] == 'dtd':
+        from dataset.dtd import prepare_train_loaders, prepare_test_loaders
+        train_loaders = prepare_train_loaders(data_config)
+        test_loaders = prepare_test_loaders(data_config)
+    elif data_config['type'] == 'mnist':
+        from dataset.mnist import prepare_train_loaders, prepare_test_loaders
+        train_loaders = prepare_train_loaders(data_config)
+        test_loaders = prepare_test_loaders(data_config)
+    elif data_config['type'] == 'gtsrb':
+        from dataset.gtsrb import prepare_train_loaders, prepare_test_loaders
+        train_loaders = prepare_train_loaders(data_config)
+        test_loaders = prepare_test_loaders(data_config)
     elif data_config['type'] == 'svhn':
         from dataset.svhn import prepare_train_loaders, prepare_test_loaders
         train_loaders = prepare_train_loaders(data_config)
         test_loaders = prepare_test_loaders(data_config)
-    # elif data_config['type'] == 'sun397':
-    #     from dataset.sun397 import prepare_train_loaders, prepare_test_loaders
-    #     train_loaders = prepare_train_loaders(data_config)
-    #     test_loaders = prepare_test_loaders(data_config)
-    # elif data_config['type'] == 'resisc45':
-    #     from dataset.resisc45 import prepare_train_loaders, prepare_test_loaders
-    #     train_loaders = prepare_train_loaders(data_config)
-    #     test_loaders = prepare_test_loaders(data_config)
+    elif data_config['type'] == 'sun397':
+        from dataset.sun397 import prepare_train_loaders, prepare_test_loaders
+        train_loaders = prepare_train_loaders(data_config)
+        test_loaders = prepare_test_loaders(data_config)
+    elif data_config['type'] == 'resisc45':
+        from dataset.resisc45 import prepare_train_loaders, prepare_test_loaders
+        train_loaders = prepare_train_loaders(data_config)
+        test_loaders = prepare_test_loaders(data_config)
     else:
         raise NotImplementedError(config['type'])
     

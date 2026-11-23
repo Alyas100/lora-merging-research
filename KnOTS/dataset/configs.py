@@ -35,16 +35,16 @@ stanford_cars = {
     'dir': './data/stanford_cars'
 }
 
-# mnist = {
-#     'wrapper': MNIST,
-#     'batch_size': 128,
-#     'res': 224,
-#     'type': 'mnist',
-#     'num_workers': 8,
-#     'shuffle_train': True,
-#     'shuffle_test': False,
-#     'dir': './data/mnist'
-# }
+mnist = {
+    'wrapper': MNIST,
+    'batch_size': 128,
+    'res': 224,
+    'type': 'mnist',
+    'num_workers': 8,
+    'shuffle_train': True,
+    'shuffle_test': False,
+    'dir': './data/mnist'
+}
 
 svhn = {
     'wrapper': SVHN,

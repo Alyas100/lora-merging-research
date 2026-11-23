@@ -39,26 +39,26 @@ config = {
         #     'batch_size': 32,
         #     'num_workers': 16,
         # },
-        # {
-        #     'name': 'gtsrb',
-        #     'shuffle_train': True,
-        #     'crop_ratio': 1.0,
-        #     'clip_encodings': os.path.join(HEAD_DIR, VIT_ARCH, 'gtsrb_head.pt'),
-        #     'val_fraction': 0.2,
-        #     'batch_size': 32,
-        #     'num_workers': 16,
-        #     'shuffled_idxs': os.path.join(os.getcwd(), 'dataset/shuffled_idxs/gtsrb_shuffled_idxs.pt')
-        # },
-        # {
-        #     'name': 'mnist',
-        #     'shuffle_train': True,
-        #     'crop_ratio': 1.0,
-        #     'clip_encodings': os.path.join(HEAD_DIR, VIT_ARCH, 'mnist_head.pt'),
-        #     'val_fraction': 0.2,
-        #     'batch_size': 32,
-        #     'num_workers': 8,  
-        #     'shuffled_idxs': os.path.join(os.getcwd(), 'dataset/shuffled_idxs/mnist_shuffled_idxs.pt')
-        # },
+        {
+            'name': 'gtsrb',
+            'shuffle_train': True,
+            'crop_ratio': 1.0,
+            'clip_encodings': os.path.join(HEAD_DIR, VIT_ARCH, 'gtsrb_head.pt'),
+            'val_fraction': 0.2,
+            'batch_size': 32,
+            'num_workers': 16,
+            'shuffled_idxs': os.path.join(os.getcwd(), 'dataset/shuffled_idxs/gtsrb_shuffled_idxs.pt')
+        },
+        {
+            'name': 'mnist',
+            'shuffle_train': True,
+            'crop_ratio': 1.0,
+            'clip_encodings': os.path.join(HEAD_DIR, VIT_ARCH, 'mnist_head.pt'),
+            'val_fraction': 0.2,
+            'batch_size': 32,
+            'num_workers': 8,  
+            'shuffled_idxs': os.path.join(os.getcwd(), 'dataset/shuffled_idxs/mnist_shuffled_idxs.pt')
+        },
         # {
         #     'name': 'resisc45',
         #     'shuffle_train': True,
