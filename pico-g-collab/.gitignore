@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Conda and virtual environments
+.conda/
+.venv/
+venv/
+
+# Hugging Face and model caches
+.cache/
+*.safetensors
+*.bin
+
+# Downloaded datasets and CLIP heads
+data/
+ViT-B-32-CLIP/
+adapter/
+
+# Experiment outputs
+wandb/
+outputs/
+runs/
+checkpoints/
+*.pt
+*.pth

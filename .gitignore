@@ -68,3 +68,11 @@ results/
 
 # Local scripts and setup output
 setup.log
+__pycache__/
+*.pyc
+**/data/
+*.mat
+*.tar.gz
+*.zip
+KnOTS-ViT-B-32-lora-R16-adapters/
+ViT-B-32-CLIP-heads/
